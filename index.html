@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Shooter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="menu">
+        <h1>🔫 MINI SHOOTER</h1>
+        <p>WASD = mover | Mouse = mirar | Clique = atirar</p>
+        <button id="startButton">JOGAR</button>
+    </div>
+
+    <div id="hud">
+        <span>❤️ Vida: <strong id="health">100</strong></span>
+        <span>🎯 Pontos: <strong id="score">0</strong></span>
+    </div>
+
+    <canvas id="game"></canvas>
+
+    <div id="gameOver">
+        <h1>VOCÊ MORREU</h1>
+        <p>Pontuação: <span id="finalScore">0</span></p>
+        <button id="restartButton">JOGAR NOVAMENTE</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

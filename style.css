@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    background: #080b12;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+canvas {
+    display: block;
+    background:
+        linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px),
+        #101622;
+
+    background-size: 40px 40px;
+}
+
+#menu,
+#gameOver {
+    position: fixed;
+    z-index: 10;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+
+    background: rgba(10, 15, 25, 0.95);
+
+    padding: 40px;
+
+    border: 2px solid #00eaff;
+    border-radius: 15px;
+
+    box-shadow: 0 0 40px rgba(0, 234, 255, 0.3);
+}
+
+#menu h1,
+#gameOver h1 {
+    color: #00eaff;
+    margin-bottom: 20px;
+}
+
+#menu p {
+    margin-bottom: 25px;
+    color: #ccc;
+}
+
+button {
+    background: #00eaff;
+    color: #061018;
+
+    border: none;
+    padding: 14px 30px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    background: white;
+    transform: scale(1.05);
+}
+
+#hud {
+    position: fixed;
+
+    top: 20px;
+    left: 20px;
+
+    z-index: 5;
+
+    display: flex;
+    gap: 30px;
+
+    font-size: 20px;
+
+    background: rgba(0, 0, 0, 0.5);
+
+    padding: 12px 20px;
+
+    border-radius: 10px;
+}
+
+#health {
+    color: #ff3b5c;
+}
+
+#score {
+    color: #00eaff;
+}
+
+#gameOver {
+    display: none;
+}
+
+#gameOver p {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
